@@ -461,8 +461,8 @@ html {
 }
 
 .theme-btn.call-to-action-button {
-    background: var(--black-color);
-    color: var(--main-color);
+    background: #fff;
+    color:#000;
 }
 
 .theme-btn.call-to-action-button:hover {
@@ -1129,12 +1129,12 @@ html {
     padding-bottom: 100px;
     background-image: linear-gradient(
         180deg,
-        #ff0022 0%, /* Rusty Red */
-        #c3283a 20%, /* Light Carmine Pink */
-        #d75662 40%, /* Light Coral */
-        #eb7074 60%, /* Mauvelous */
-        #f3948a 80%, /* Light Red */
-        #f0e0c0 100% /* Floral White */
+        #cfd8dc 0%, /* Light Gray */
+        #9fa8da 20%, /* Very Light Blue */
+        #5c6bc0 40%, /* Lighter Blue */
+        #3949ab 60%, /* Light Blue */
+        #283593 80%, /* Medium Blue */
+        #1a237e 100% /* Dark Blue */
     );
 }
 
@@ -1159,14 +1159,13 @@ html {
     padding-bottom: 100px;
     background-image: linear-gradient(
         180deg,
-        #ff0022 0%, /* Rusty Red */
-        #c3283a 20%, /* Light Carmine Pink */
-        #d75662 40%, /* Light Coral */
-        #eb7074 60%, /* Mauvelous */
-        #f3948a 80%, /* Light Red */
-        #f0e0c0 100% /* Floral White */
+        #1a237e 0%, /* Dark Blue */
+        #283593 20%, /* Medium Blue */
+        #3949ab 40%, /* Light Blue */
+        #5c6bc0 60%, /* Lighter Blue */
+        #9fa8da 80%, /* Very Light Blue */
+        #cfd8dc 100% /* Light Gray */
     );
-    
 }
 
 .hero-content {
@@ -1344,17 +1343,19 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .about-area {
-    padding: 100px 0px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     background-image: linear-gradient(
         180deg,
-        #f0e0c0 0%, /* Floral White */
-        #f3948a 20%, /* Light Red */
-        #eb7074 40%, /* Mauvelous */
-        #d75662 60%, /* Light Coral */
-        #c3283a 80%, /* Light Carmine Pink */
-        #ff0022 100% /* Rusty Red */
-);
+        #1a237e 100%, /* Dark Blue */
+        #283593 80%, /* Medium Blue */
+        #3949ab 60%, /* Light Blue */
+        #5c6bc0 40%, /* Lighter Blue */
+        #9fa8da 20%, /* Very Light Blue */
+        #cfd8dc 0% /* Light Gray */
+    );
 }
+
 
 .about-content-part {
     padding-left: 60px;
@@ -1677,13 +1678,13 @@ ul.extra-skills li i {
     padding-top: 50px;
     padding-bottom: 100px;
     background-image: linear-gradient(
-        180deg,
-        #f0e0c0 0%, /* Floral White */
-        #f3948a 20%, /* Light Red */
-        #eb7074 40%, /* Mauvelous */
-        #d75662 60%, /* Light Coral */
-        #c3283a 80%, /* Light Carmine Pink */
-        #ff0022 100% /* Rusty Red */
+    180deg,
+    #cfd8dc 0%, /* Light Gray */
+    #9fa8da 20%, /* Very Light Blue */
+    #5c6bc0 40%, /* Lighter Blue */
+    #3949ab 60%, /* Light Blue */
+    #283593 80%, /* Medium Blue */
+    #1a237e 100% /* Dark Blue */
 );
 }
 
@@ -2368,7 +2369,10 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .company-design-area {
+
     padding: 100px 0px;
+    background: 
+    #1a237e 100% /* Dark Blue */;
 }
 
 .company-design-area h2 {
@@ -2381,18 +2385,20 @@ ul.extra-skills li i {
     font-weight: 500;
 }
 
-.footer-bottom {}
+.footer-bottom {
+    background:#1a237e;
+}
 
 .call-to-action-part {
     padding: 50px 100px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
     background-color: fff;
 }
 
 .call-to-action-area {
     padding-top: 15px;
+    background: #1a237e;
 
 }
 
@@ -2417,7 +2423,7 @@ ul.extra-skills li i {
 }
 
 .footer-bottom .copyright-text a {
-    color: var(--primary-color);
+    color: #000;
 }
 
 

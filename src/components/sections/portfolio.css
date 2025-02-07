@@ -10,18 +10,25 @@
     margin-top: -30px; /* Kutuları yukarı taşı */
 }
 
-.custom-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px; /* Adjust margin if needed */
+/* In your portfolio.css */
+.custom-text {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.custom-icon img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    scale: 50%;
+.custom-text h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 768px) {
+    .custom-text h2 {
+        font-size: 2.2rem;
+    }
 }
 
 

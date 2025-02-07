@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import workScribble from "../../assets/images/custom/work-scribble.svg";
 import { FaBullseye, FaUsers, FaClock, FaVideo, FaChartLine, FaLock } from 'react-icons/fa';
 import "./portfolio.css"; // Özel CSS dosyası
 
@@ -25,9 +24,11 @@ const Portfolio = () => {
 
     return (
         <div className="projects-area" id="portfolio">
-            <div className="custom-icon">
-                <img src={workScribble} alt="custom" />
+            {/* Replacing image with text */}
+            <div className="custom-text">
+                <h2>YouTube Dijital İle %100 Organik İzleyicilere Şimdi Ulaşın!</h2>
             </div>
+            
             <div className="container-fluid">
                 <div className="row g-4 portfolio-grid">
                     {portfolioItems.map(({ id, title, icon, description }, index) => (
