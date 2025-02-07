@@ -1,0 +1,72 @@
+.projects-area {
+    padding-top: 30px; /* Üstten boşluğu azaltarak daha yukarı taşı */
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -30px; /* Kutuları yukarı taşı */
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Kutular arasındaki boşluk */
+}
+
+.portfolio-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.portfolio-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.portfolio-description {
+    font-size: 14px;
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-box.active .portfolio-description {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.portfolio-items {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}

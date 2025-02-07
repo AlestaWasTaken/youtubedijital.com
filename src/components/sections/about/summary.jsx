@@ -18,13 +18,17 @@ const Summary = () => {
     <div className="about-content-part wow fadeInUp delay-0-5s">
     <h3 className="highlight-heading">X Türkiye Nedir?</h3> {/* Renkli yapılacak başlık */}
         <p>
-            X Türkiye, dijital dünyada yaratıcılıkla yenilikçi çözümleri birleştiren bir platformdur. Sanattan dijital medya üretimine, müzik endüstrisinden sosyal medya fenomelerine kadar birçok farklı sektörde faaliyet gösteren X Türkiye, müşterilerine özgün ve etkili projeler sunmaktadır. Türkiye'nin en iyi sanatçılarından dijital medya uzmanlarına kadar geniş bir ağ kurarak, her projede kaliteli sonuçlar elde etmeyi hedefler.
+        X Türkiye, dijital dünyada yaratıcılığı ve yenilikçi çözümleri birleştiren bir platformdur. Sanattan dijital medya üretimine, müzik endüstrisinden sosyal medya fenomenlerine kadar birçok farklı sektörde faaliyet gösteren X Türkiye, özellikle YouTube gibi dijital platformlarda güçlü projeler geliştirmektedir. YouTube'da içerik üretimi, fenomen işbirlikleri ve müzik video prodüksiyonlarıyla tanınan platform, markalar ve sanatçılar için özgün ve etkili çözümler sunar.
+
+
         </p>
         <p>
-            Platform, globalde tanınmış Spotify Playlistleri, TikTok fenomenleri ile sağladığı işbirlikleri ve popüler müzik prodüksiyonları ile dikkat çekmektedir. X Türkiye, dijital pazarda güçlü bir etki yaratmak isteyen markalar ve sanatçılar için en verimli yol arkadaşı olma vizyonunu taşır.
+        X Türkiye, YouTube üzerinde popüler içerik üreticileri ile yaptığı işbirlikleri ve yüksek etkileşimli videoları ile dikkat çekmektedir. Müşterilerine, YouTube’un algoritmalarına uygun stratejilerle geniş kitlelere ulaşma fırsatı sunar. Ayrıca, YouTube üzerinden sanatçıların ve markaların dijital etkilerini artırmalarına yardımcı olur.
+
+
         </p>
         <p>
-            Yıllar içinde 1200’den fazla sanatçıyla işbirliği yapan, 500'ün üzerinde Spotify playlist'inde yer alan X Türkiye, müşteri memnuniyetine ve yaratıcı çözüm geliştirmeye odaklanarak her zaman sektördeki gelişmeleri takip eder. Bunu yaparken de sanatsal, ticari ve dijital alandaki pek çok projeyi başarıyla yönetir.
+        1200'ün üzerinde sanatçıyla işbirliği yapan ve YouTube üzerinde binlerce saatlik içerik üreten X Türkiye, bu platformda da güçlü bir varlık göstererek sektördeki gelişmeleri takip eder ve yenilikçi projeleri hayata geçirir. YouTube'da yüksek etkileşimli, dikkat çekici ve özgün projeler üreterek müşteri memnuniyetini her zaman ön planda tutar.
         </p>
     </div>
 </div>
