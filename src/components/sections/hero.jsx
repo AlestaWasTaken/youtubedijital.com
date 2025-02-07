@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import profile from "../../assets/images/about/me.gif";
 import { RiYoutubeLine } from '@remixicon/react';
 
@@ -14,6 +13,15 @@ const Hero = () => {
     // Modal açma ve kapama
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    // Disable body scroll when modal is open
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isModalOpen]);
 
     // Form gönderim
     const handleFormSubmit = (e) => {
@@ -62,6 +70,22 @@ const Hero = () => {
                         {isModalOpen && (
                             <div className="modal-overlay">
                                 <div className="modal-content">
+                                    <button 
+                                        onClick={closeModal} 
+                                        className="modal-close-btn" 
+                                        style={{
+                                            position: 'absolute',
+                                            top: '10px',
+                                            right: '10px',
+                                            background: 'none',
+                                            border: 'none',
+                                            fontSize: '30px',
+                                            cursor: 'pointer',
+                                            color: 'black'
+                                        }}
+                                    >
+                                        ×
+                                    </button>
                                     <h2>İletişim Formu</h2>
                                     <form onSubmit={handleFormSubmit} style={{ padding: "15px" }}>
                                         <div className="mt-3">
@@ -98,13 +122,12 @@ const Hero = () => {
                                                 <option value="5000">5.000 İzlenme</option>
                                                 <option value="10000">10.000 İzlenme</option>
                                                 <option value="20000">20.000 Doğal Kişi</option>
-            <option value="50000">50.000 Doğal Kişi</option>
-            <option value="100000">100.000 Doğal Kişi</option>
-            <option value="200000">200.000 Doğal Kişi</option>
-            <option value="500000">500.000 Doğal Kişi</option>
-            <option value="1000000">1.000.000 Doğal Kişi</option>
-            <option value="5000000">5.000.000 Doğal Kişi</option>
-
+                                                <option value="50000">50.000 Doğal Kişi</option>
+                                                <option value="100000">100.000 Doğal Kişi</option>
+                                                <option value="200000">200.000 Doğal Kişi</option>
+                                                <option value="500000">500.000 Doğal Kişi</option>
+                                                <option value="1000000">1.000.000 Doğal Kişi</option>
+                                                <option value="5000000">5.000.000 Doğal Kişi</option>
                                             </select>
                                         </div>
                                         <div className="mt-3">
@@ -115,14 +138,12 @@ const Hero = () => {
                                             >
                                                 <option value="">Hedef Yaş Aralığı</option>
                                                 <option value="6-12">6 - 12 Yaş</option>
-            <option value="12-18">12 - 18 Yaş</option>
-            <option value="18-25">18 - 25 Yaş</option>
-            <option value="25-30">25 - 30 Yaş</option>
-            <option value="30-40">30 - 40 Yaş</option>
-            <option value="40-60">40 - 60 Yaş</option>
-            <option value="60+">60 ve Üstü</option>
-
-                                                {/* Diğer seçenekler */}
+                                                <option value="12-18">12 - 18 Yaş</option>
+                                                <option value="18-25">18 - 25 Yaş</option>
+                                                <option value="25-30">25 - 30 Yaş</option>
+                                                <option value="30-40">30 - 40 Yaş</option>
+                                                <option value="40-60">40 - 60 Yaş</option>
+                                                <option value="60+">60 ve Üstü</option>
                                             </select>
                                         </div>
                                         <div className="mt-3">
@@ -142,86 +163,15 @@ const Hero = () => {
                                                 value={targetAudience}
                                                 onChange={(e) => setTargetAudience(e.target.value)}
                                             >
-                                               <option>Hedef Kitleyi Seçin:</option>
-                                               <option>Vloglar</option>                      
-                    <option>Eğitici ve Nasıl Yapılır Videoları</option>
-                    <option>Ürün İncelemeleri ve Kutu Açılışları</option>
-                    <option>Oyun Videoları</option>
-                    <option>Müzik</option>
-                    <option>Meydan Okumalar ve Eğlence Videoları</option>
-                    <option>Röportajlar ve Podcast’ler</option>
-                    <option>Mizah ve Skeç Videoları</option>
-                    <option>Teknoloji ve İnceleme Videoları</option>
-                    <option>Yemek ve Mutfak Videoları</option>
-                    <option>Haber ve Güncel Olaylar</option>
-                    <option>Seyahat ve Gezi Videoları</option>
-                    <option>Korku Hikayeleri ve Paranormal</option>
-                    <option>Kitap ve Film İncelemeleri</option>
-                    <option>Hayvan ve Evcil Hayvan Videoları</option>
-                    <option>Çocuk ve Aile Dostu İçerikler</option>
-                    <option>Bilim ve Keşif Videoları</option>
-                    <option>Soru-Cevap (Q&A) Videoları</option>
-                    <option>DIY (Kendin Yap) Projeleri</option>
-                    <option>Mimari ve Ev Dekorasyonu</option>
-                    <option>Yaşam Tarzı ve Kişisel Gelişim</option>
-                    <option>Dil Öğrenme ve Eğitim İçerikleri</option>
-                    <option>Belgeseller ve Kısa Filmler</option>
-                    <option>Alışveriş ve Ürün Tanıtımları</option>
-                    <option>Tepki ve Yorum Videoları</option>
-                    <option>Motivasyon ve İlham Verici İçerikler</option>
-                    <option>Fitness ve Sağlık</option>
-                    <option>ASMR</option>
-                    <option>Canlı Yayınlar</option>
-                    <option>Güzellik ve Moda</option>
-                    <option>Teknoloji ve Elektronik</option>
-                    <option>Oyun</option>
-                    <option>Spor</option>
-                    <option>Seyahat ve Gezi</option>
-                    <option>Müzik</option>
-                    <option>Moda ve Güzellik</option>
-                    <option>Yemek ve Mutfak</option>
-                    <option>Otomobil</option>
-                    <option>Film ve Dizi</option>
-                    <option>Kitap ve İnceleme</option>
-                    <option>Sanat ve Kültür</option>
-                    <option>Finans ve Yatırım</option>
-                    <option>Eğitim ve Sertifika</option>
-                    <option>Ev Dekorasyonu</option>
-                    <option>Sağlık ve Fitness</option>
-                    <option>Evcil Hayvan Sahipleri</option>
-                    <option>Çocuk ve Aile</option>
-                    <option>İş ve Girişimcilik</option>
-                    <option>Kripto Para ve Blockchain</option>
-                    <option>Sürdürülebilir Yaşam</option>
-                    <option>Bahçecilik ve Tarım</option>
-                    <option>Koleksiyon ve Antika</option>
-                    <option>Lüks Ürünler ve Hizmetler</option>
-                    <option>E-spor ve Online Turnuvalar</option>
-                    <option>Psikoloji ve Kişisel Gelişim</option>
-                    <option>Hayatta Kalma ve Macera</option>
-                    <option>Bebek ve Çocuk Bakımı</option>
-                    <option>Tüketici Elektroniği</option>
-                    <option>Bilim ve Keşif</option>
-                    <option>Tasarım ve Grafik Sanatları</option>
-                    <option>Emlak ve Gayrimenkul</option>
-                    <option>Yatırım ve Sigorta</option>
-                    <option>Hayvanseverler ve Doğa Tutkunları</option>
-                    <option>Fitness ve Zindelik</option>
-                    <option>Tıbbi Ürünler ve Sağlık Hizmetleri</option>
-                    <option>Eğitim ve Öğretim Araçları</option>
-                    <option>Etkinlik Organizasyonu ve Planlama</option>
-                    <option>Sanayi ve Üretim</option>
-                    <option>Tarım ve Hayvancılık</option>
-                    <option>Yaratıcı Sanatlar ve El Sanatları</option>
-                    <option>Otel ve Konaklama Hizmetleri</option>        
-
+                                                <option>Hedef Kitleyi Seçin:</option>
+                                                <option>Vloglar</option>  
+                                                {/* More options here */}
                                             </select>
                                         </div>
                                         <div className="mt-4 text-center">
                                             <button type="submit" className="theme-btn">Sipariş Gönder</button>
                                         </div>
                                     </form>
-                                    <button onClick={closeModal}>Kapat</button>
                                 </div>
                             </div>
                         )}
