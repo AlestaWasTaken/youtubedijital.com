@@ -21,6 +21,7 @@
     max-width: 100%;
     height: auto;
     display: block;
+    scale: 50%;
 }
 
 
@@ -60,7 +61,7 @@
 
 .portfolio-description {
     font-size: 14px;
-    color: #666;
+    color: #000000;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -82,5 +83,5 @@
     padding: 10px;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
-    color: #333;
+    color: #000000;
 }
