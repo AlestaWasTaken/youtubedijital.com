@@ -10,6 +10,20 @@
     margin-top: -30px; /* Kutuları yukarı taşı */
 }
 
+.custom-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Adjust margin if needed */
+}
+
+.custom-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .portfolio-item {
     flex: 1 1 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
