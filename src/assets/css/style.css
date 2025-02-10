@@ -681,6 +681,9 @@ html {
     background: transparent;
     color: var(--primary-color);
 }
+.row{
+    color: black;
+}
 
 .ratting {
     line-height: 1;
@@ -1128,14 +1131,13 @@ html {
     padding-top: 200px;
     padding-bottom: 100px;
     background-image: linear-gradient(
-        180deg,
-        #cfd8dc 0%, /* Light Gray */
-        #9fa8da 20%, /* Very Light Blue */
-        #5c6bc0 40%, /* Lighter Blue */
-        #3949ab 60%, /* Light Blue */
-        #283593 80%, /* Medium Blue */
-        #1a237e 100% /* Dark Blue */
-    );
+    180deg,
+    #8b0000 0%,   /* Koyu Kırmızı (Üst) */
+    #c43d3d 25%,  /* Hafif Koyu Kırmızı */
+    #e57373 50%,  /* Soluk Kırmızı */
+    #f8d7da 75%,  /* Açık Pembe-Kırmızı */
+    #ffffff 100%  /* Beyaz (Alt) */
+);
 }
 
 .single-page-hero-area h2 {
@@ -1158,14 +1160,15 @@ html {
     padding-top: 200px;
     padding-bottom: 100px;
     background-image: linear-gradient(
-        180deg,
-        #1a237e 0%, /* Dark Blue */
-        #283593 20%, /* Medium Blue */
-        #3949ab 40%, /* Light Blue */
-        #5c6bc0 60%, /* Lighter Blue */
-        #9fa8da 80%, /* Very Light Blue */
-        #cfd8dc 100% /* Light Gray */
-    );
+    180deg,
+    #8b0000 0%,   /* Koyu Kırmızı (Üst) */
+    #c43d3d 25%,  /* Hafif Koyu Kırmızı */
+    #e57373 50%,  /* Soluk Kırmızı */
+    #f8d7da 75%,  /* Açık Pembe-Kırmızı */
+    #ffffff 100%  /* Beyaz (Alt) */
+);
+
+
 }
 
 .hero-content {
@@ -1311,7 +1314,7 @@ html {
 .hero-counter-area .count-text {
     line-height: 1;
     font-weight: 700;
-    color: var(--white-color);
+    color: black;
     text-align: center;
     font-size: 50px;
 
@@ -1347,12 +1350,11 @@ html {
     padding-bottom: 100px;
     background-image: linear-gradient(
         180deg,
-        #1a237e 100%, /* Dark Blue */
-        #283593 80%, /* Medium Blue */
-        #3949ab 60%, /* Light Blue */
-        #5c6bc0 40%, /* Lighter Blue */
-        #9fa8da 20%, /* Very Light Blue */
-        #cfd8dc 0% /* Light Gray */
+        #ffffff 0%,   /* Beyaz (Üst) */
+        #f8d7da 25%,  /* Açık Pembe-Kırmızı */
+        #e57373 50%,  /* Soluk Kırmızı */
+        #c43d3d 75%,  /* Hafif Koyu Kırmızı */
+        #8b0000 100%  /* Koyu Kırmızı (Alt) */
     );
 }
 
@@ -1678,14 +1680,15 @@ ul.extra-skills li i {
     padding-top: 50px;
     padding-bottom: 100px;
     background-image: linear-gradient(
-    180deg,
-    #cfd8dc 0%, /* Light Gray */
-    #9fa8da 20%, /* Very Light Blue */
-    #5c6bc0 40%, /* Lighter Blue */
-    #3949ab 60%, /* Light Blue */
-    #283593 80%, /* Medium Blue */
-    #1a237e 100% /* Dark Blue */
-);
+        180deg,
+        #ffffff 0%,   /* Beyaz (Üst) */
+        #f8d7da 25%,  /* Açık Pembe-Kırmızı */
+        #e57373 50%,  /* Soluk Kırmızı */
+        #c43d3d 75%,  /* Hafif Koyu Kırmızı */
+        #8b0000 100%  /* Koyu Kırmızı (Alt) */
+    );
+    
+
 }
 
 
@@ -2372,21 +2375,21 @@ ul.extra-skills li i {
 
     padding: 100px 0px;
     background: 
-    #1a237e 100% /* Dark Blue */;
+    #ff0000 100% /* Dark Blue */;
 }
 
 .company-design-area h2 {
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: #000000;
     margin-bottom: 30px;
     letter-spacing: 5px;
     font-weight: 500;
 }
 
 .footer-bottom {
-    background:#1a237e;
+    background:#ffffff;
 }
 
 .call-to-action-part {
@@ -2398,7 +2401,15 @@ ul.extra-skills li i {
 
 .call-to-action-area {
     padding-top: 15px;
-    background: #1a237e;
+    background-image: linear-gradient(
+    180deg,
+    #8b0000 0%,   /* Koyu Kırmızı (Üst) */
+    #c43d3d 25%,  /* Hafif Koyu Kırmızı */
+    #e57373 50%,  /* Soluk Kırmızı */
+    #f8d7da 75%,  /* Açık Pembe-Kırmızı */
+    #ffffff 100%  /* Beyaz (Alt) */
+);
+
 
 }
 
@@ -2407,12 +2418,12 @@ ul.extra-skills li i {
     line-height: 70px;
     margin-bottom: 20px;
     font-weight: 400;
-    color: #fff;
+    color: #000000;
 }
 
 .call-to-action-part p {
     font-size: 20px;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-bottom .copyright-text {
