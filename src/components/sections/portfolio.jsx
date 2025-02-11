@@ -218,7 +218,7 @@ const Portfolio = () => {
                 </form>
             </div>
 
-            {/* İlk 6 kutu */}
+            {/* İlk 6 kutu bi yapamadık amk */}
             <div className="container-fluid">
                 <div className="row g-4 portfolio-grid">
                     {portfolioItems.slice(0, 6).map(({ id, title, icon, description }) => (
@@ -233,7 +233,7 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            {/* YouTube Video Carousel */}
+            {/* YouTube Video Carousel ELLEME ANANI SİKERİM BOZULUYO SONRA */}
             <div className="container-fluid mt-5">
                 <Carousel>
                 <Carousel.Item>
