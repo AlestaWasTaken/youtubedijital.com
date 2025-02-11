@@ -101,7 +101,7 @@ h5,
 h6,
 .h6,
 .accordion-item .accordion-button {
-    color: var(--main-color);
+    color: black;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -2371,12 +2371,7 @@ ul.extra-skills li i {
 * 14.FOOTER CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-.company-design-area {
 
-    padding: 100px 0px;
-    background: 
-    #ff0000 100% /* Dark Blue */;
-}
 
 .company-design-area h2 {
     text-transform: uppercase;
@@ -2418,7 +2413,7 @@ ul.extra-skills li i {
     line-height: 70px;
     margin-bottom: 20px;
     font-weight: 400;
-    color: #000000;
+    color: #fff;
 }
 
 .call-to-action-part p {

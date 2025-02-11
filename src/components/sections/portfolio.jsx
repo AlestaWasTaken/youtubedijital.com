@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBullseye, FaUsers, FaClock, FaVideo, FaChartLine, FaLock } from 'react-icons/fa';
 import { RiYoutubeLine } from 'react-icons/ri'; // Ensure this import is there if you're using RiYoutubeLine
+import { Carousel } from 'react-bootstrap';
 import "./portfolio.css";
 
 const portfolioItems = [
@@ -161,8 +162,259 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
+
+            {/* YouTube Video Carousel */}
+            <div className="container-fluid mt-5">
+                <h2>YouTube Projeleri</h2>
+                <Carousel>
+                <Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/7nZAbsKG-Jc?si=rY8esuGbwre971RF"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+                    {/* First Slide with YouTube Video 1 */}
+                    <Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/PcH9Pe63EN4"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/8-ZK-LqA3dM"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/YG4xKYjx3XE"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/KKFDogui-OQ"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/5sUIcmZSlqM"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/w0LtuMcdImc"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/XW2YNOlH88I"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/ZEWFzmXQcfQ"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/F6E7uOrM3dc"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/cuEeVR3cqt4"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/Ag_v8HNqDnw"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/l98HY_lNqLM"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/4f5IJjmTmXE"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/869CzD0n3dM"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/upvadsf_QXg"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/k2UXy0VbdpM"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/Cp8z03vKKaU"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/gxyOb1awpQ0"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+
+<Carousel.Item>
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/2NJ1L7K5Ops"
+        title="YouTube video 6"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+    ></iframe>
+</Carousel.Item>
+                </Carousel>
+            </div>
         </div>
     );
 };
+
+
+
+
 
 export default Portfolio;
