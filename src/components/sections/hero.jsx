@@ -62,7 +62,7 @@ const Hero = () => {
                             <h1>Merhaba, YouTube Dijital İle Artık Tüm İzlenme İhtiyaçlarınızı Karşılayabilirsiniz</h1>
                             <h2>Ekibimizle doğru bir planlama yapın, hedeflerinize ulaşın.</h2>
                             <div className="hero-btns">
-                                <button onClick={openModal} className="theme-btn">Tıkla ve Sipariş Oluştur! <RiYoutubeLine size={24} /></button>
+                                
                             </div>
                         </div>
 

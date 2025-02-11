@@ -110,14 +110,24 @@
 h2{
     color: black;
 }
+.custom-text h2{
+    color: black;
+}
 
 /* Media query for responsive design */
 @media (min-width: 768px) {
     .custom-text h2 {
         font-size: 2.2rem;
-        color: black;
+        padding-left: 15px;
+        text-align: center; /* Center the text */
     }
     .portfolio-item {
         flex: 1 1 calc(33.333% - 20px);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .projects-area {
+        padding-top: 20px;
+        text-align: center;
     }
 }

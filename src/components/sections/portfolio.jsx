@@ -142,7 +142,7 @@ const Portfolio = () => {
                         </select>
                     </div>
                     <div className="mt-4 text-center">
-                        <button type="submit" className="theme-btn">Sipariş Gönder</button>
+                        <button type="submit" className="theme-btn">Sipariş Gönder Fiyat Al</button>
                     </div>
                 </form>
             </div>
