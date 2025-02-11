@@ -93,6 +93,15 @@
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: red;
+  }
+
 .portfolio-box.active .portfolio-description {
     max-height: 100px;
     opacity: 1;
