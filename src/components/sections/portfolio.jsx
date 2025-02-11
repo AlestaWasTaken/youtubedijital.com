@@ -56,31 +56,36 @@ const Portfolio = () => {
 
             {/* Formu üstte, kutuların hemen üzerinde gösterme */}
             <div className="form-container" style={{ marginBottom: '30px' }}>
-                <h2>İletişim Formu</h2>
+                
                 <form onSubmit={handleFormSubmit} style={{ padding: "15px", border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
-                    <div className="mt-3">
-                        <input
-                            type="text"
-                            className="form-control"
-                            value={videoLink}
-                            onChange={(e) => setVideoLink(e.target.value)}
-                            placeholder="YouTube Video Linkini Giriniz"
-                            style={{ marginBottom: "10px" }}
-                        />
-                        {videoPreview && (
-                            <div className="video-preview" style={{ margin: "10px 0", textAlign: "center" }}>
-                                <iframe
-                                    width="100%"
-                                    height="315"
-                                    src={videoPreview}
-                                    title="YouTube Video Önizlemesi"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
-                        )}
-                    </div>
+                <div className="mt-3">
+    <input
+        type="text"
+        className="form-control"
+        value={videoLink}
+        onChange={(e) => setVideoLink(e.target.value)}
+        placeholder="YouTube Video Linkini Giriniz"
+        style={{ 
+            marginBottom: "10px", 
+            textAlign: "center", 
+            color: "black" 
+        }}
+    />
+    {videoPreview && (
+        <div className="video-preview" style={{ margin: "10px 0", textAlign: "center" }}>
+            <iframe
+                width="100%"
+                height="315"
+                src={videoPreview}
+                title="YouTube Video Önizlemesi"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
+        </div>
+    )}
+</div>
+
                     <div className="mt-3">
                         <select
                             className="form-select"
@@ -135,11 +140,76 @@ const Portfolio = () => {
                         >
                             <option>Hedef Kitleyi Seçin:</option>
                             <option>Vloglar</option>
-                            <option>Eğitici ve Nasıl Yapılır Videoları</option>
-                            <option>Ürün İncelemeleri ve Kutu Açılışları</option>
-                            <option>Oyun Videoları</option>
-                            <option>Müzik</option>
-                            <option>Meydan Okumalar ve Eğlence Videoları</option>
+                    <option>Eğitici ve Nasıl Yapılır Videoları</option>
+                    <option>Ürün İncelemeleri ve Kutu Açılışları</option>
+                    <option>Oyun Videoları</option>
+                    <option>Müzik</option>
+                    <option>Meydan Okumalar ve Eğlence Videoları</option>
+                    <option>Röportajlar ve Podcast’ler</option>
+                    <option>Mizah ve Skeç Videoları</option>
+                    <option>Teknoloji ve İnceleme Videoları</option>
+                    <option>Yemek ve Mutfak Videoları</option>
+                    <option>Haber ve Güncel Olaylar</option>
+                    <option>Seyahat ve Gezi Videoları</option>
+                    <option>Korku Hikayeleri ve Paranormal</option>
+                    <option>Kitap ve Film İncelemeleri</option>
+                    <option>Hayvan ve Evcil Hayvan Videoları</option>
+                    <option>Çocuk ve Aile Dostu İçerikler</option>
+                    <option>Bilim ve Keşif Videoları</option>
+                    <option>Soru-Cevap (Q&A) Videoları</option>
+                    <option>DIY (Kendin Yap) Projeleri</option>
+                    <option>Mimari ve Ev Dekorasyonu</option>
+                    <option>Yaşam Tarzı ve Kişisel Gelişim</option>
+                    <option>Dil Öğrenme ve Eğitim İçerikleri</option>
+                    <option>Belgeseller ve Kısa Filmler</option>
+                    <option>Alışveriş ve Ürün Tanıtımları</option>
+                    <option>Tepki ve Yorum Videoları</option>
+                    <option>Motivasyon ve İlham Verici İçerikler</option>
+                    <option>Fitness ve Sağlık</option>
+                    <option>ASMR</option>
+                    <option>Canlı Yayınlar</option>
+                    <option>Güzellik ve Moda</option>
+                    <option>Teknoloji ve Elektronik</option>
+                    <option>Oyun</option>
+                    <option>Spor</option>
+                    <option>Seyahat ve Gezi</option>
+                    <option>Müzik</option>
+                    <option>Moda ve Güzellik</option>
+                    <option>Yemek ve Mutfak</option>
+                    <option>Otomobil</option>
+                    <option>Film ve Dizi</option>
+                    <option>Kitap ve İnceleme</option>
+                    <option>Sanat ve Kültür</option>
+                    <option>Finans ve Yatırım</option>
+                    <option>Eğitim ve Sertifika</option>
+                    <option>Ev Dekorasyonu</option>
+                    <option>Sağlık ve Fitness</option>
+                    <option>Evcil Hayvan Sahipleri</option>
+                    <option>Çocuk ve Aile</option>
+                    <option>İş ve Girişimcilik</option>
+                    <option>Kripto Para ve Blockchain</option>
+                    <option>Sürdürülebilir Yaşam</option>
+                    <option>Bahçecilik ve Tarım</option>
+                    <option>Koleksiyon ve Antika</option>
+                    <option>Lüks Ürünler ve Hizmetler</option>
+                    <option>E-spor ve Online Turnuvalar</option>
+                    <option>Psikoloji ve Kişisel Gelişim</option>
+                    <option>Hayatta Kalma ve Macera</option>
+                    <option>Bebek ve Çocuk Bakımı</option>
+                    <option>Tüketici Elektroniği</option>
+                    <option>Bilim ve Keşif</option>
+                    <option>Tasarım ve Grafik Sanatları</option>
+                    <option>Emlak ve Gayrimenkul</option>
+                    <option>Yatırım ve Sigorta</option>
+                    <option>Hayvanseverler ve Doğa Tutkunları</option>
+                    <option>Fitness ve Zindelik</option>
+                    <option>Tıbbi Ürünler ve Sağlık Hizmetleri</option>
+                    <option>Eğitim ve Öğretim Araçları</option>
+                    <option>Etkinlik Organizasyonu ve Planlama</option>
+                    <option>Sanayi ve Üretim</option>
+                    <option>Tarım ve Hayvancılık</option>
+                    <option>Yaratıcı Sanatlar ve El Sanatları</option>
+                    <option>Otel ve Konaklama Hizmetleri</option>       
                         </select>
                     </div>
                     <div className="mt-4 text-center">
@@ -165,7 +235,6 @@ const Portfolio = () => {
 
             {/* YouTube Video Carousel */}
             <div className="container-fluid mt-5">
-                <h2>YouTube Projeleri</h2>
                 <Carousel>
                 <Carousel.Item>
     <iframe

@@ -116,7 +116,10 @@ h2{
 .custom-text h2{
     color: black;
     scale: 105%;
+    position: relative;
+    bottom: 1rem;
 }
+
 
 /* Media query for responsive design */
 @media (min-width: 768px) {
@@ -124,6 +127,7 @@ h2{
         font-size: 2.2rem;
         padding-left: 15px;
         text-align: center; /* Center the text */
+        padding-bottom: 50px;
     }
     .portfolio-item {
         flex: 1 1 calc(33.333% - 20px);
