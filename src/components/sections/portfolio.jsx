@@ -4,6 +4,7 @@ import { RiYoutubeLine } from 'react-icons/ri'; // Ensure this import is there i
 import { Carousel } from 'react-bootstrap';
 import "./portfolio.css";
 
+
 const portfolioItems = [
     { id: 1, title: "Hedef İzlenme Sayısını Belirleyin", icon: <FaBullseye />, description: "İzlenme hedeflerinizi belirleyerek stratejinizi oluşturun." },
     { id: 2, title: "Doğru Kitleye Ulaşın", icon: <FaUsers />, description: "Hedef kitlenizi analiz ederek doğru kişilere ulaşın." },
@@ -18,6 +19,7 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => {
+    const [showPrices, setShowPrices] = useState(false);
     const [videoLink, setVideoLink] = useState("");
     const [targetViews, setTargetViews] = useState("");
     const [targetAge, setTargetAge] = useState([]);
@@ -213,8 +215,44 @@ const Portfolio = () => {
                         </select>
                     </div>
                     <div className="mt-4 text-center">
-                        <button type="submit" className="theme-btn">Sipariş Gönder Fiyat Al</button>
-                    </div>
+    <button type="submit" className="theme-btn">Şimdi Sipariş Ver</button>
+    <button 
+        type="button" 
+        className="theme-btn" 
+        style={{ marginLeft: '10px', backgroundColor: '#ffcc00', color: '#000' }} 
+        onClick={() => setShowPrices(true)}
+    >
+        Fiyatlar
+    </button>
+</div>
+
+{/* Fiyatlar Modalı */}
+{showPrices && (
+    <div className="price-modal">
+        <div className="price-modal-content" style={{ color: "#000" , backgroundColor: "#fff", padding: "15px", borderRadius: "8px", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}>
+            <h3>Fiyat Listesi</h3>
+            <ul>
+            <li>2.500 İzlenme - 400₺</li>
+                <li>5.000 İzlenme - 750₺</li>
+                <li>10.000 İzlenme - 1200₺</li>
+                <li>20.000 İzlenme - 1600₺</li>
+                <li>50.000 İzlenme - 3900₺</li>
+                <li>100.000 İzlenme - 6500₺</li>
+                <li>200.000 İzlenme - 12.000₺</li>
+                <li>500.000 İzlenme - 30.000₺</li>
+                <li>1.000.000 İzlenme - 55.000₺</li>
+                <li>5.000.000 İzlenme - 250.000₺</li>
+            </ul>
+            <button 
+                className="theme-btn" 
+                onClick={() => setShowPrices(false)}
+            >
+                Kapat
+            </button>
+        </div>
+    </div>
+)}
+
                 </form>
             </div>
 
